@@ -543,7 +543,15 @@ table td {
         width: 50%;
         padding: 10px;
     }
+/* 預設文字大小 */
+.footer-text {
+    font-size: 22px;
+    margin-top: 0;
+}
 
+.footer-text + p {
+    font-size: 16px;
+}
 /* 響應式設計 */
 @media (max-width: 600px) {
 
@@ -618,6 +626,13 @@ table td {
     .primary.email-section .btn {
         width: 50%; /* 按鈕寬度為 100% */
         text-align: center; /* 按鈕文字居中 */
+    }
+	 .footer-text {
+        font-size: 16px; /* 預設文字縮小 */
+    }
+
+    .footer-text + p {
+        font-size: 12px; /* 讓第二段文字縮小 */
     }
 }
 
@@ -962,12 +977,13 @@ table td {
     </div>
 
 </div>
-<div valign="middle" class="bg_black footer email-section" style="text-align: center; padding: 30px 0px 30px 0px;" >
-   <p style="font-size: 22px; margin-top: 0;">雷恩數位行銷X設計 © 2024 All Rights Reserved.</p>
-	<p style="font-size: 16px;">為了確保您未來可以收到雷恩數位行銷的電子信，<br>
+<div valign="middle" class="bg_black footer email-section" style="text-align: center; padding: 30px 0px 30px 0px;">
+   <p class="footer-text" style="margin-top: 0;">雷恩數位行銷X設計 © 2024 All Rights Reserved.</p>
+   <p class="footer-text" >為了確保您未來可以收到雷恩數位行銷的電子信，<br>
 						請將<a href="https://contacts.google.com/" target="_blank">ryandigitalmarketing82@gmail.com</a> 加進您的聯絡人。<br>
 						若您不再希望收到電子報，請按此<a href="https://yourwebsite.com/unsubscribe?email=user@example.com&token=unique-token" target="_blank">取消訂閱</a></p>
 </div>
+
     </div>
 </body>
 </html>
